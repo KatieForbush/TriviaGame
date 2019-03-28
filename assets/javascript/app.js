@@ -1,4 +1,4 @@
-function check(); {
+function check() {
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
@@ -45,15 +45,15 @@ function check(); {
     var messages = ["WOW!", "hmmmmm maybe we can do better?", "OUCH!"];
     var pictures = ["images/WOW.gif", "images/soso.gif", "images/Ouch.gif"]
     
-    var range:
+    var range;
 
         if (correct < 1) {
             range = 2;
         }
-        if (correct > 0 && < 3) {
+        if (correct > 0 && correct < 3) {
             range = 1;
         }
-        if (correct > 9 && < 11) {
+        if (correct > 9 && correct < 11) {
             range = 0;
         }
 
