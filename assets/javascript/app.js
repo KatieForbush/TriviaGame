@@ -47,10 +47,10 @@ function check() {
     
     var range;
 
-        if (correct < 1) {
+        if (correct < 4) {
             range = 2;
         }
-        if (correct > 0 && correct < 3) {
+        if (correct > 5 && correct < 8) {
             range = 1;
         }
         if (correct > 9 && correct < 11) {
