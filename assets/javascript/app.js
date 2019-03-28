@@ -1,4 +1,4 @@
-function check() {
+function check(); {
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
@@ -20,7 +20,7 @@ function check() {
     if (question3 == "carson") {
         correct++;
     }
-    if (question4 == "javenlin") {
+    if (question4 == "javelin") {
         correct++;
     }
     if (question5 == "coconut") {
@@ -40,14 +40,21 @@ function check() {
     }
     if (question00 == "mule") {
         correct++;
-    }
+    };
 
     var messages = ["WOW!", "hmmmmm maybe we can do better?", "OUCH!"];
+    var pictures = ["images/WOW.gif", "images/soso.gif", "images/Ouch.gif"]
     
     var range:
 
         if (correct < 1) {
-            range: 2;
+            range = 2;
+        }
+        if (correct > 0 && < 3) {
+            range = 1;
+        }
+        if (correct > 9 && < 11) {
+            range = 0;
         }
 
     
@@ -58,4 +65,5 @@ function check() {
 
     document.getElementById("messages").innerHTML = messages[range];
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
+    document.getElementById("pictures").src = pictures[range];
 };
