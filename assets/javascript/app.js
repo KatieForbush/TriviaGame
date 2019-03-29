@@ -43,7 +43,7 @@ function check() {
     };
 
     var messages = ["WOW!", "hmmmmm maybe we can do better?", "OUCH!"];
-    var pictures = ["assets/images/WOW.gif", "assets/images/soso.gif", "assets/images/Ouch.gif"]
+    var pictures = ["./assets/images/WOW.gif", "./assets/images/soso.gif", "./assets/images/Ouch.gif"]
     
     var range;
 
