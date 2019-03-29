@@ -61,9 +61,9 @@ function check() {
 
 
 
-    document.getElementById("after_submit").style.visibility = "visable";
+    document.getElementById("after_submit").style.visibility = "visible";
     // document.getElementsByClassName("container").style.visibility = "hidden";
-    document.getElementById("bob").style.visibility = "hidden";
+    document.getElementById("bob").style.display = "none";
     document.getElementById("messages").innerHTML = messages[range];
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
     document.getElementById("pictures").src = pictures[range];
