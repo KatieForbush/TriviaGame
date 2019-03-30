@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TRIVIA GAME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="assets/javascript/app.js"></script>
 </head>
+
 <body>
     <h1>How many can you get?</h1>
-    <div class = "container" id="bob">
-            <div class="row">
-                    <div class="col-6">
-    <form id = "quiz" name = "quiz">
+    <div class="container" id="gameContainer">
+        <div class="row">
+            <div class="col-6">
+                <form id="quiz" name="quiz">
 
-        <p>85% of us love this smell, the other 15% hate it. What is the smell?</p>
-        <input type = "radio" name = "question1" value = "skunk"> Skunk<br>
-        <input type = "radio" name = "question1" value = "ocean"> Ocean<br>
-        <input type = "radio" name = "question1" value = "fresh cut grass"> Fresh Cut Grass<br>
-        <input type = "radio" name = "question1" value = "rain"> Rain<br>
-        <br>
-        <p>How many people have walked on the moon?</p>
-        <input type = "radio" name = "question2" value = "4"> 4<br>
-        <input type = "radio" name = "question2" value = "7"> 7<br>
-        <input type = "radio" name = "question2" value = "1"> 1<br>
-        <input type = "radio" name = "question2" value = "12"> 12<br>
-        <br>
-        <p>Barbies last name is Roberts, what is Kens last name?</p>
-        <input type = "radio" name = "question3" value = "jones"> Jones<br>
-        <input type = "radio" name = "question3" value = "carson"> Carson<br>
-        <input type = "radio" name = "question3" value = "smith"> Smith<br>
-        <input type = "radio" name = "question3" value = "thomas"> Thomas<br>
-        <br>
-        <p>Garth Brooks went to college on a scholarship for what sport?</p>
-        <input type = "radio" name = "question4" value = "baseball"> Baseball<br>
-        <input type = "radio" name = "question4" value = "shot put"> Shot put<br>
-        <input type = "radio" name = "question4" value = "hockey"> Hockey<br>
-        <input type = "radio" name = "question4" value = "javelin"> Javelin<br>
-        <br>
-        <p>150 people are killed by this food each year?</p>
-        <input type = "radio" name = "question5" value = "coconut"> Coconut<br>
-        <input type = "radio" name = "question5" value = "peanut"> Peanut<br>
-        <input type = "radio" name = "question5" value = "chicken"> Chicken<br>
-        <input type = "radio" name = "question5" value = "bananas"> Bananas<br>
-        <br>
-        </div>
-        <div class="col-6">
-        <p>57% of employers are less likely to promote someone who does this in the office.</p>
-        <input type = "radio" name = "question6" value = "uses profanity"> Uses Profanity<br>
-        <input type = "radio" name = "question6" value = "flosses"> Flosses<br>
-        <input type = "radio" name = "question6" value = "farts"> Farts<br>
-        <input type = "radio" name = "question6" value = "eats sardines"> Eats Sardines<br>
-        <br>
-        <p>What is the national animal of Scotland?</p>
-        <input type = "radio" name = "question7" value = "lion"> Lion<br>
-        <input type = "radio" name = "question7" value = "horse"> Horse<br>
-        <input type = "radio" name = "question7" value = "scottish terrier"> Scottish Terrier<br>
-        <input type = "radio" name = "question7" value = "unicorn"> Unicorn<br>
-        <br>
-        <p>2% of the worlds water is what?</p>
-        <input type = "radio" name = "question8" value = "polluted"> Polluted<br>
-        <input type = "radio" name = "question8" value = "vapor"> Vapor<br>
-        <input type = "radio" name = "question8" value = "frozen"> Frozen<br>
-        <input type = "radio" name = "question8" value = "in antartica"> In Antartica<br>
-        <br>
-        <p>What is the United States National Animal?</p>
-        <input type = "radio" name = "question9" value = "deer"> Deer<br>
-        <input type = "radio" name = "question9" value = "robin"> Robin<br>
-        <input type = "radio" name = "question9" value = "snake"> Snake<br>
-        <input type = "radio" name = "question9" value = "bison"> Bison<br>
-        <br>
-        <p>What animal will NOT sink in quicksand?</p>
-        <input type = "radio" name = "question00" value = "mule"> Mule<br>
-        <input type = "radio" name = "question00" value = "donkey"> Donkey<br>
-        <input type = "radio" name = "question00" value = "lion"> Lion<br>
-        <input type = "radio" name = "question00" value = "giraffe"> Giraffe<br>
-        <br>
-        <input id = "button" type = "button" value = "All Done!" onclick = "check();">
-        <br>
-
-
-
-    </form>
-</div>
-    </div>
-        </div>
+                    <p>85% of us love this smell, the other 15% hate it. What is the smell?</p>
+                    <input type="radio" name="question1" value="skunk"> Skunk<br>
+                    <input type="radio" name="question1" value="ocean"> Ocean<br>
+                    <input type="radio" name="question1" value="fresh cut grass"> Fresh Cut Grass<br>
+                    <input type="radio" name="question1" value="rain"> Rain<br>
+                    <br>
+                    <p>How many people have walked on the moon?</p>
+                    <input type="radio" name="question2" value="4"> 4<br>
+                    <input type="radio" name="question2" value="7"> 7<br>
+                    <input type="radio" name="question2" value="1"> 1<br>
+                    <input type="radio" name="question2" value="12"> 12<br>
+                    <br>
+                    <p>Barbies last name is Roberts, what is Kens last name?</p>
+                    <input type="radio" name="question3" value="jones"> Jones<br>
+                    <input type="radio" name="question3" value="carson"> Carson<br>
+                    <input type="radio" name="question3" value="smith"> Smith<br>
+                    <input type="radio" name="question3" value="thomas"> Thomas<br>
+                    <br>
+                    <p>Garth Brooks went to college on a scholarship for what sport?</p>
+                    <input type="radio" name="question4" value="baseball"> Baseball<br>
+                    <input type="radio" name="question4" value="shot put"> Shot put<br>
+                    <input type="radio" name="question4" value="hockey"> Hockey<br>
+                    <input type="radio" name="question4" value="javelin"> Javelin<br>
+                    <br>
+                    <p>150 people are killed by this food each year?</p>
+                    <input type="radio" name="question5" value="coconut"> Coconut<br>
+                    <input type="radio" name="question5" value="peanut"> Peanut<br>
+                    <input type="radio" name="question5" value="chicken"> Chicken<br>
+                    <input type="radio" name="question5" value="bananas"> Bananas<br>
+                    <br>
             </div>
-            <div id = "after_submit">
-                    <p id = "messages"></p>
-                    <p id = "number_correct"></p>
-                    <img id = "pictures">
-                </div>
+            <div class="col-6">
+                <p>57% of employers are less likely to promote someone who does this in the office.</p>
+                <input type="radio" name="question6" value="uses profanity"> Uses Profanity<br>
+                <input type="radio" name="question6" value="flosses"> Flosses<br>
+                <input type="radio" name="question6" value="farts"> Farts<br>
+                <input type="radio" name="question6" value="eats sardines"> Eats Sardines<br>
+                <br>
+                <p>What is the national animal of Scotland?</p>
+                <input type="radio" name="question7" value="lion"> Lion<br>
+                <input type="radio" name="question7" value="horse"> Horse<br>
+                <input type="radio" name="question7" value="scottish terrier"> Scottish Terrier<br>
+                <input type="radio" name="question7" value="unicorn"> Unicorn<br>
+                <br>
+                <p>2% of the worlds water is what?</p>
+                <input type="radio" name="question8" value="polluted"> Polluted<br>
+                <input type="radio" name="question8" value="vapor"> Vapor<br>
+                <input type="radio" name="question8" value="frozen"> Frozen<br>
+                <input type="radio" name="question8" value="in antartica"> In Antartica<br>
+                <br>
+                <p>What is the United States National Animal?</p>
+                <input type="radio" name="question9" value="deer"> Deer<br>
+                <input type="radio" name="question9" value="robin"> Robin<br>
+                <input type="radio" name="question9" value="snake"> Snake<br>
+                <input type="radio" name="question9" value="bison"> Bison<br>
+                <br>
+                <p>What animal will NOT sink in quicksand?</p>
+                <input type="radio" name="question00" value="mule"> Mule<br>
+                <input type="radio" name="question00" value="donkey"> Donkey<br>
+                <input type="radio" name="question00" value="lion"> Lion<br>
+                <input type="radio" name="question00" value="giraffe"> Giraffe<br>
+                <br>
+                <input id="button" type="button" value="All Done!" onclick="check();">
+                <br>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="after_submit">
+        <p id="messages"></p>
+        <p id="number_correct"></p>
+        <img id="pictures">
+    </div>
 
 </body>
+
 </html>

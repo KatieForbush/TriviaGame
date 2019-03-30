@@ -45,15 +45,15 @@ function check() {
     var messages = ["WOW!", "hmmmmm maybe we can do better?", "OUCH!"];
     var pictures = ["./assets/images/WOW.gif", "./assets/images/soso.gif", "./assets/images/Ouch.gif"]
     
-    var range;
+    var range = 0;
 
-        if (correct < 4) {
+        if (correct <= 4) {
             range = 2;
-        }
-        if (correct > 5 && correct < 8) {
+        } else 
+        if (correct >= 5 && correct <= 8) {
             range = 1;
-        }
-        if (correct > 9 && correct < 11) {
+        } else
+        if (correct >= 9 ) {
             range = 0;
         }
 
@@ -63,7 +63,7 @@ function check() {
 
     document.getElementById("after_submit").style.visibility = "visible";
     // document.getElementsByClassName("container").style.visibility = "hidden";
-    document.getElementById("bob").style.display = "none";
+    document.getElementById("gameContainer").style.display = "none";
     document.getElementById("messages").innerHTML = messages[range];
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
     document.getElementById("pictures").src = pictures[range];
